@@ -11,8 +11,6 @@ export const verifySignature = (
     .update(payload)
     .digest("hex");
 
-  console.log("checking the hash", hash, signature);
-
   return hash === signature;
 };
 
